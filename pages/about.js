@@ -6,11 +6,23 @@ const About = () => {
             <Head>
                 <title>Next Project | About</title>
             </Head>
-            <h1 className="aboutHead">Dette er en about-side</h1>
+            <h1 className="aboutHead">This is an about-page</h1>
             <p className="aboutHead">
-                Det hele kommer til at handle om katte 😅 😂 🤣
+                Pretend this is all about cats 😅 😂 🤣
             </p>
-            <style>
+            <p className="aboutHead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maiores facilis nisi dolores vero? Labore ipsa veniam quisquam perspiciatis autem doloremque 
+                repellat maxime nam magnam eaque, id fugit? Dolore quod sequi fugit, 
+                impedit harum in earum ducimus vel, labore, accusantium magnam.
+            </p>
+            <p className="aboutHead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maiores facilis nisi dolores vero? Labore ipsa veniam quisquam perspiciatis autem doloremque 
+                repellat maxime nam magnam eaque, id fugit? Dolore quod sequi fugit, 
+                impedit harum in earum ducimus vel, labore, accusantium magnam.
+            </p>
+            <style jsx>
                 {`
                     .aboutHead {
                         text-align: center;
