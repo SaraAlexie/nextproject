@@ -15,8 +15,21 @@ a {
   color: black;
 }
 
+li {
+  list-style: none;
+}
+
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 62.5em;
+  margin: 0 auto;
+  border-bottom: solid 1px darkgray;
+}
+
+nav .logo {
+  margin-right: auto;
 }
 
 nav a {
