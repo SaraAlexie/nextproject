@@ -1,5 +1,7 @@
+import Image from 'next/image'
+
 export const getStaticPaths = async () => {
-    const response = await fetch('https://api.thecatapi.com/v1/breeds')
+    const response = await fetch('https://api.thecatapi.com/v1/breeds?limit=30')
     const data = await response.json()
 
     const paths = data.map(cat => {
@@ -13,7 +15,7 @@ export const getStaticPaths = async () => {
         fallback: false
     }
 } // Dette gør os i stand til at vide, hvor meget data der bliver hentet, 
-  // selvom det er eksternt, så next ved, hvor mange html-sider der skal laves
+  // selvom det er eksternt, så next ved, hvor mange html-sider der skal laves.
 
 export const getStaticProps = async (context) => {
     const id = context.params.id;
@@ -27,7 +29,14 @@ export const getStaticProps = async (context) => {
 
 const CatDetails = ({ cat }) => {
     return (
-        <h1>{cat.name}</h1>
+        <>
+            <h1>{cat.name}</h1>
+            <Image 
+                src={cat.image.url}
+                height={200}
+                width={200}
+            />
+        </>
     );
 }
  
