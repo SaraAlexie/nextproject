@@ -1,10 +1,14 @@
+import Link from 'next/link'
 
-
-const CatCard = () => {
+const CatCard = ({ cat }) => {
     return (
-        <li>
-            
-        </li>
+        <Link href={`/cats/${cat.id}`}>
+            <a>
+                <li>
+                    <h3>{cat.name}</h3>
+                </li>
+            </a>
+        </Link>
     );
 }
  
