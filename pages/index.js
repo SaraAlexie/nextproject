@@ -17,8 +17,6 @@ export default function Home() {
         alt='Black Cat'
         height={555}
         width={555}
-        blurDataURL="data:..." 
-        placeholder="blur"
       />
     </div>
   )
