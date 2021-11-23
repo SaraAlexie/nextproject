@@ -20,7 +20,7 @@ const CatList = ({ cats }) => {
             <h1 style={{textAlign: 'center'}}>Her kommer man til at kunne se alle katte</h1>
             <ul style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr'}}>
                 {cats?.map(cat => (
-                    <CatCard key={cat.id} cat={cat} />
+                    <CatCard key={cat.id} cat={cat}/>
                 ))}
             </ul>
         </>

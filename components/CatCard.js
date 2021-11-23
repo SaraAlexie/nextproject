@@ -4,7 +4,7 @@ import Image from 'next/image'
 const CatCard = ({ cat }) => {
 
     return (
-        <Link href={`/cats/${cat.id}`}>
+        <Link href={`/cats/${cat.id}`} image={cat.image.url} >
             <a>
                 <li>
                     <Image

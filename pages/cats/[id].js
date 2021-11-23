@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Head from 'next/head'
 
 export const getStaticPaths = async () => {
     const response = await fetch('https://api.thecatapi.com/v1/breeds?limit=30')
@@ -27,15 +28,23 @@ export const getStaticProps = async (context) => {
     }
 } // Next kører denne funktion for hver details-page, baseret på paths
 
+
+
 const CatDetails = ({ cat }) => {
+
     return (
         <>
-            <h1>{cat.name}</h1>
-            <Image 
-                src={cat.image.url}
-                height={200}
-                width={200}
-            />
+            <Head>
+                <title>Next Project | {cat.name}</title>
+            </Head>
+            <div>
+                <Image
+                    src={ cat.image ? cat.image.url : "/images/silhouette.png" }
+                    height={480}
+                    width={443}
+                />
+                <h1>{cat.name}</h1>
+            </div>
         </>
     );
 }
