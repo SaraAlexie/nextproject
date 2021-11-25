@@ -6,7 +6,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
   
   h1 {
-    @apply text-2xl;
+    @apply text-2xl my-4 font-bold;
   }
   
   h2 {
@@ -41,7 +41,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 62.5em;
+  width: 64em;
   margin: 0 auto;
   border-bottom: solid 1px darkgray;
 }
@@ -56,4 +56,5 @@ nav a {
 
 footer {
   text-align: center;
+  margin-top: 2em;
 }

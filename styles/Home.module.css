@@ -1,3 +1,7 @@
-.header, .text{
+.header{
   text-align: center;
 }
+
+/*
+  Bruges således: className={styles.header}
+*/

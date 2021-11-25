@@ -1,22 +1,22 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.header}>
+    <div className="max-w-screen-lg mx-auto text-center">
       <Head>
         <title>Next Project | Home</title>
       </Head>
       <h1>
-        Her kommer mit projekt til at være
+        This is my next.js project!
       </h1>
-      <p>Det kommer nok til at handle om katte :P</p>
+      <p>It's about cats :P</p>
       <Image
-        src='/images/blackcat.jpeg'
+        src='/images/kittens.jpeg'
         alt='Black Cat'
-        height={555}
-        width={555}
+        height={564}
+        width={1016}
+        className="shadow-xl rounded"
       />
     </div>
   )
