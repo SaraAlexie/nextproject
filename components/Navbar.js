@@ -5,7 +5,11 @@ const Navbar = () => {
     return (
         <nav>
             <div className='logo'>
-                <Image src='/images/logo.png' height={80} width={80} />
+                <Link href="/">
+                    <a>
+                        <Image src='/images/logo.png' height={80} width={80} />
+                    </a>
+                </Link>
             </div>
             <Link href="/"><a>Home</a></Link>
             <Link href="/about"><a>About</a></Link>

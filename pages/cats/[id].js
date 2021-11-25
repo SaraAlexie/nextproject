@@ -32,19 +32,30 @@ export const getStaticProps = async (context) => {
 
 const CatDetails = ({ cat }) => {
 
+    cat && console.log(cat);
+
     return (
         <>
             <Head>
                 <title>Next Project | {cat.name}</title>
             </Head>
-            <div>
+            <section className="max-w-screen-lg mx-auto flex justify-between my-8">
                 <Image
                     src={ cat.image ? cat.image.url : "/images/silhouette.png" }
                     height={480}
                     width={443}
+                    alt="Picture of cat"
+                    className="w-2/5"
                 />
-                <h1>{cat.name}</h1>
-            </div>
+                <article className="w-2/5">
+                    <h1 className="my-4">{cat.name}</h1>
+                    <p className="my-2">Origin: {cat.origin}</p>
+                    <p className="my-2">{cat.description}</p>
+                    <p className="my-2">Temperament: {cat.temperament}.</p>
+                    <p className="my-2">Weight: {cat.weight.metric} kilograms.</p>
+                    <p className="my-2">Lifespan: {cat.weight.metric} years.</p>
+                </article>
+            </section>
         </>
     );
 }

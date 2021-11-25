@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const About = () => {
     return (
-        <>
+        <section className="max-w-screen-lg mx-auto">
             <Head>
                 <title>Next Project | About</title>
             </Head>
@@ -29,7 +29,7 @@ const About = () => {
                     }
                 `}
             </style>
-        </>
+        </section>
     );
 }
  
