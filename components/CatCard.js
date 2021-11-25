@@ -6,11 +6,11 @@ const CatCard = ({ cat }) => {
     return (
         <Link href={`/cats/${cat.id}`} image={cat.image.url} >
             <a>
-                <li>
+                <li className="border-b border-gray-200">
                     <Image
                         src={ cat.image ? cat.image.url : "/images/blackcat.jpeg" }
                         height={200}
-                        width={200}
+                        width={256}
                     />
                     <h3>{cat.name}</h3>
                 </li>

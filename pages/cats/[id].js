@@ -32,8 +32,6 @@ export const getStaticProps = async (context) => {
 
 const CatDetails = ({ cat }) => {
 
-    cat && console.log(cat);
-
     return (
         <>
             <Head>
@@ -49,6 +47,7 @@ const CatDetails = ({ cat }) => {
                 />
                 <article className="w-2/5">
                     <h1 className="my-4">{cat.name}</h1>
+                    <p className="my-2">Other name(s): {cat.alt_names ? cat.alt_names : "none"}</p>
                     <p className="my-2">Origin: {cat.origin}</p>
                     <p className="my-2">{cat.description}</p>
                     <p className="my-2">Temperament: {cat.temperament}.</p>

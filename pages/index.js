@@ -8,14 +8,15 @@ export default function Home() {
         <title>Next Project | Home</title>
       </Head>
       <h1>
-        Her kommer mit projekt til at være
+        This is my next.js project!
       </h1>
-      <p>Det kommer nok til at handle om katte :P</p>
+      <p>It's about cats :P</p>
       <Image
-        src='/images/blackcat.jpeg'
+        src='/images/kittens.jpeg'
         alt='Black Cat'
-        height={555}
-        width={555}
+        height={564}
+        width={1016}
+        className="shadow-xl rounded"
       />
     </div>
   )
