@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className='mr-auto'>
                 <Link href="/">
                     <a>
-                        <Image src='/images/logo.png' height={80} width={80} />
+                        <Image src='/images/logo.png' alt="Logo" height={80} width={80} />
                     </a>
                 </Link>
             </div>
