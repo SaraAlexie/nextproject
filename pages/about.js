@@ -25,6 +25,7 @@ const About = () => {
                 <div className="text-center">
                     <Image
                         src="/images/walkcat.jpeg"
+                        alt="Black cat walking"
                         width={577}
                         height={433}
                         className="shadow-xl rounded"

@@ -9,6 +9,7 @@ const CatCard = ({ cat }) => {
                 <li className="border-b border-gray-400">
                     <Image
                         src={ cat.image ? cat.image.url : "/images/blackcat.jpeg" }
+                        alt="Catpicture"
                         height={200}
                         width={256}
                     />
