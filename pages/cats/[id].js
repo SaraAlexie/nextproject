@@ -37,15 +37,8 @@ const CatDetails = ({ cat }) => {
             <Head>
                 <title>Next Project | {cat.name}</title>
             </Head>
-            <section className="max-w-screen-lg mx-auto flex justify-between my-8">
-                <Image
-                    src={ cat.image ? cat.image.url : "/images/silhouette.png" }
-                    height={480}
-                    width={443}
-                    alt="Picture of cat"
-                    className="w-2/5"
-                />
-                <article className="w-2/5">
+            <section className="max-w-screen-lg mx-auto md:flex md:justify-between my-8 px-4">
+                <article className="md:w-2/5">
                     <h1 className="my-4">{cat.name}</h1>
                     <p className="my-2">Other name(s): {cat.alt_names ? cat.alt_names : "none"}</p>
                     <p className="my-2">Origin: {cat.origin}</p>
@@ -54,6 +47,13 @@ const CatDetails = ({ cat }) => {
                     <p className="my-2">Weight: {cat.weight.metric} kilograms.</p>
                     <p className="my-2">Lifespan: {cat.weight.metric} years.</p>
                 </article>
+                <Image
+                    src={ cat.image ? cat.image.url : "/images/silhouette.png" }
+                    height={480}
+                    width={443}
+                    alt="Picture of cat"
+                    className="md:w-2/5"
+                />
             </section>
         </>
     );

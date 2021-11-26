@@ -6,7 +6,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
   
   h1 {
-    @apply text-2xl my-4 font-bold;
+    @apply text-3xl my-4 font-bold;
   }
   
   h2 {
@@ -37,24 +37,14 @@ li {
   list-style: none;
 }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 64em;
-  margin: 0 auto;
-  border-bottom: solid 1px darkgray;
-}
-
-nav .logo {
-  margin-right: auto;
-}
-
-nav a {
-  margin: 1em;
-}
-
 footer {
   text-align: center;
   margin-top: 2em;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
+  }
 }

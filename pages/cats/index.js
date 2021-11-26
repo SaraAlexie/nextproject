@@ -18,7 +18,7 @@ const CatList = ({ cats }) => {
                 <title>Next Project | Cat List</title>
             </Head>
             <h1 className="text-center">Cat list</h1>
-            <ul className="grid grid-cols-4 gap-3">
+            <ul className="grid md:grid-cols-4 gap-3 grid-cols-2 text-center mx-3.5">
                 {cats?.map(cat => (
                     <CatCard key={cat.id} cat={cat}/>
                 ))}
