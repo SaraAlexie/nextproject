@@ -1,7 +1,4 @@
-.header{
-  text-align: center;
-}
-
 /*
-  Bruges således: className={styles.header}
+Importeres som: Import styles from '../styles/Home.module.css'
+Bruges: className={styles.classenavn}
 */
