@@ -10,7 +10,7 @@ export default function Home() {
       <h1>
         This is my next.js project!
       </h1>
-      <p>It's about cats :P</p>
+      <p>It is about cats :P</p>
       <Image
         src="/images/kittens.jpeg"
         alt="Black Cat"
