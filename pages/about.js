@@ -28,7 +28,7 @@ const About = () => {
                         alt="Black cat walking"
                         width={577}
                         height={433}
-                        className="shadow-xl rounded"
+                        className="shadow-xl rounded p-4"
                     />
                 </div>
                 

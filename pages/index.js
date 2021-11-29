@@ -12,8 +12,8 @@ export default function Home() {
       </h1>
       <p>It's about cats :P</p>
       <Image
-        src='/images/kittens.jpeg'
-        alt='Black Cat'
+        src="/images/kittens.jpeg"
+        alt="Black Cat"
         height={564}
         width={1016}
         className="shadow-xl rounded"
