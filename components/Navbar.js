@@ -11,9 +11,9 @@ const Navbar = () => {
                     </a>
                 </Link>
             </div>
-            <Link href="/"><a className="md:mr-9 mr-4 self-end">Home</a></Link>
-            <Link href="/about"><a className="md:mr-9 mr-4 self-end">About</a></Link>
-            <Link href="/cats"><a className="md:mr-9 mr-4 self-end">Cat List</a></Link>
+            <Link href="/"><a className="md:mr-9 mr-4 self-end hover:underline">Home</a></Link>
+            <Link href="/about"><a className="md:mr-9 mr-4 self-end hover:underline">About</a></Link>
+            <Link href="/cats"><a className="md:mr-9 mr-4 self-end hover:underline">Cat List</a></Link>
             {/*<div className="md:hidden self-end block absolute top-5 right-5">
                 <div className="w-6 h-1 mb-1 bg-black"></div>
                 <div className="w-6 h-1 mb-1 bg-black"></div>
