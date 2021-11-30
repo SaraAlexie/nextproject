@@ -21,6 +21,10 @@ const About = () => {
                     Maiores facilis nisi dolores vero? Labore ipsa veniam quisquam perspiciatis autem doloremque 
                     repellat maxime nam magnam eaque, id fugit? Dolore quod sequi fugit, 
                     impedit harum in earum ducimus vel, labore, accusantium magnam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Maiores facilis nisi dolores vero? Labore ipsa veniam quisquam perspiciatis autem doloremque 
+                    repellat maxime nam magnam eaque, id fugit? Dolore quod sequi fugit, 
+                    impedit harum in earum ducimus vel, labore, accusantium magnam.
                 </p>
                 <div className="text-center">
                     <Image

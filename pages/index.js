@@ -13,10 +13,11 @@ export default function Home() {
       <p>It is about cats :P</p>
       <Image
         src="/images/kittens.jpeg"
-        alt="Black Cat"
+        alt="Kittens"
         height={564}
         width={1016}
-        className="shadow-xl rounded"
+        className="shadow-xl rounded p-4"
+        priority
       />
     </div>
   )

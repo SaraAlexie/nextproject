@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="icon" href="/images/logo.png" />
+        <meta name="description" content="School Next.js project about cats" />
       </Head>
       <Layout>
         <Component {...pageProps} />
