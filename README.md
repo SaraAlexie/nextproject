@@ -1,3 +1,11 @@
+# First step into the world of Next.js
+This little project is my first attempt at using Next.js.
+It is hosted at vercel.com, the creaters of Next.js
+
+URL: https://nextproject-alpha.vercel.app/
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
