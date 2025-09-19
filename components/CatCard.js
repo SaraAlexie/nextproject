@@ -1,15 +1,14 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 
 const CatCard = ({ cat }) => {
-
     return (
-        <Link href={`/cats/${cat.id}`} image={cat.image.url} >
+        <Link href={`/cats/${cat.id}`}>
             <a>
                 <li className="border-b border-gray-400 hover:bg-gray-400">
                     <Image
-                        src={ cat.image ? cat.image.url : "/images/blackcat.jpeg" }
-                        alt="Catpicture"
+                        src={cat.image?.url || "/images/blackcat.jpeg"}
+                        alt={cat.name || "Cat picture"}
                         height={200}
                         width={256}
                     />
@@ -18,8 +17,8 @@ const CatCard = ({ cat }) => {
             </a>
         </Link>
     );
-}
- 
+};
+
 export default CatCard;
 
-// src={`https://cdn2.thecatapi.com/images/${cat.reference_image_id}.jpg`}
+// src={https://cdn2.thecatapi.com/images/${cat.reference_image_id}.jpg}
